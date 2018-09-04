@@ -97,7 +97,7 @@ public class Display extends JPanel {
 		//add the tabbed panel so we can see it
 		add(tabbedPane);
 
-		search_panel.add(input_grid);
+		//search_panel.add(input_grid);
 		tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
 	}
 

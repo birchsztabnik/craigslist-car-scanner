@@ -28,6 +28,9 @@ public class LocationURLList {
 		urls.get(state).add(url);
 	}
 	
+	/**
+	 * @requires state to be present in urls
+	 */
 	public HashSet<String> get_state_set(String state)
 	{
 		return urls.get(state);

@@ -53,12 +53,19 @@ public class URLInput {
 				if(temp.charAt(0)=='*' && temp.charAt(temp.length()-1)=='*')
 				{
 					recent_state = temp.substring(1, temp.length()-1);
-					lurll.add_state(recent_state);
+					//check if the user wants to search this state first
+					if(state_list.contains(recent_state))
+					{
+						lurll.add_state(recent_state);
+					}
 				}
 				//just a url
 				else
 				{
-					lurll.add_URL(recent_state, temp);
+					if(state_list.contains(recent_state))
+					{
+						lurll.add_URL(recent_state, temp);
+					}
 				}
 			}
 			sc.close();

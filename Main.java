@@ -18,12 +18,18 @@ import org.jsoup.select.Elements;
 public class Main {
 	public static void main(String args[])
 	{
+		//find where to search for cars
 		URLInput ui = new URLInput();
+		LocationURLList lurll = new LocationURLList();
+		ui.get_list(lurll);
+		
+		
+		
 		String url = "https://longisland.craigslist.org/search/cta?query=altima";
 		Elements e = Crawler.get_elements(url);
 		for(Element el : e)
 		{
-			System.out.println(Helpers.trim_url(el.outerHtml()));
+			//System.out.println(Helpers.trim_url(el.outerHtml()));
 		}
 	}
 }

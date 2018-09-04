@@ -7,6 +7,11 @@ public class Posting {
 	String name;
 	Color car_color;
 	int year;
+	int transmission;
 	int price;
 	
+	//this is not determined by the ad but by the program
+	int condition; 
+	//rating score
+	int score;
 }
